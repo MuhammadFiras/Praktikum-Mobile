@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -36,17 +37,38 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
+fun DiceImage(diceValue: Int) {
+    Image(
+        painter = painterResource(id = getDiceResource(diceValue)),
+        contentDescription = "Dice $diceValue",
+        modifier = Modifier.size(180.dp)
+    )
+}
+
+fun getDiceResource(value: Int): Int {
+    return when (value) {
+        1 -> R.drawable.dice_1
+        2 -> R.drawable.dice_2
+        3 -> R.drawable.dice_3
+        4 -> R.drawable.dice_4
+        5 -> R.drawable.dice_5
+        6 -> R.drawable.dice_6
+        else -> R.drawable.dice_0
+    }
+}
+
+@Composable
 fun DiceScreen(modifier: Modifier = Modifier) {
-    var dice1 by remember { mutableStateOf(0) }
-    var dice2 by remember { mutableStateOf(0) }
-    var message by remember { mutableStateOf("") }
-    var isRolled by remember { mutableStateOf(false) }
+    var dice1 by rememberSaveable { mutableStateOf(0) }
+    var dice2 by rememberSaveable { mutableStateOf(0) }
+    var message by rememberSaveable { mutableStateOf("") }
+    var isRolled by rememberSaveable { mutableStateOf(false) }
 
     Column(
         modifier = modifier
             .fillMaxSize()
-            .background(Color(0xFF121212))
-            .padding(16.dp),
+            .background(Color.Black)
+            .padding(0.dp),
         verticalArrangement = Arrangement.SpaceBetween,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -54,8 +76,7 @@ fun DiceScreen(modifier: Modifier = Modifier) {
 
         Row(
             modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 0.dp),
+                .fillMaxWidth(),
             horizontalArrangement = Arrangement.Center
         ) {
             DiceImage(dice1)
@@ -65,7 +86,6 @@ fun DiceScreen(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(20.dp))
 
-        // Tombol Roll
         Button(
             onClick = {
                 dice1 = Random.nextInt(1, 7)
@@ -77,7 +97,7 @@ fun DiceScreen(modifier: Modifier = Modifier) {
                     "Anda belum beruntung!"
                 }
             },
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFA78BFA))
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFCE96FF))
         ) {
             Text(
                 text = "Roll",
@@ -86,16 +106,15 @@ fun DiceScreen(modifier: Modifier = Modifier) {
                 fontWeight = FontWeight.Bold)
         }
 
-        Spacer(modifier = Modifier.weight(1f)) // Mendorong notifikasi ke bawah
+        Spacer(modifier = Modifier.weight(1f))
 
-        // Notifikasi
         if (isRolled) {
             Surface(
                 color = Color.White,
                 shape = RoundedCornerShape(8.dp),
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(16.dp)
+                    .padding(5.dp)
             ) {
                 Text(
                     text = message,
@@ -105,28 +124,6 @@ fun DiceScreen(modifier: Modifier = Modifier) {
                 )
             }
         }
-    }
-}
-
-@Composable
-fun DiceImage(diceValue: Int) {
-    Image(
-        painter = painterResource(id = getDiceResource(diceValue)),
-        contentDescription = "Dice $diceValue",
-        modifier = Modifier.size(200.dp)
-    )
-}
-
-// Fungsi untuk mendapatkan ID gambar berdasarkan nilai dadu
-fun getDiceResource(value: Int): Int {
-    return when (value) {
-        1 -> R.drawable.dice_1
-        2 -> R.drawable.dice_2
-        3 -> R.drawable.dice_3
-        4 -> R.drawable.dice_4
-        5 -> R.drawable.dice_5
-        6 -> R.drawable.dice_6
-        else -> R.drawable.dice_0
     }
 }
 
