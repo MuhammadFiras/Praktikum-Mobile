@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="dropdown_background">#F3EDF7</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">XML Tip Calculator</string>
+    <style name="Theme.XmlTipCalculator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">#9C27B0</item>
+        <item name="colorPrimaryVariant">#7B1FA2</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        
+        <item name="colorSecondary">#E1BEE7</item>
+        <item name="colorSecondaryVariant">#CE93D8</item>
+        <item name="colorOnSecondary">#000000</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>

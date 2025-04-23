@@ -1,0 +1,25 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color dropdown_background
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable ic_money
+drawable ic_percent
+drawable img_100
+drawable img_100_riil
+drawable rectangle
+id billAmountInput
+id roundUpSwitch
+id tipPercentageDropdown
+id tipResultText
+id titleText
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.XMLTipCalculator
+style Theme.XmlTipCalculator
+xml backup_rules
+xml data_extraction_rules
