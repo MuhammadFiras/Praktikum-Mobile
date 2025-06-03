@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">movielist</string>
+
+    <string name="movie_1_name">Toy Story</string>
+    <string name="movie_1_rating">8.3</string>
+    <string name="movie_1_description">A cowboy doll is profoundly threatened and jealous when a new spaceman action figure supplants him as top toy in a boys bedroom.</string>
+    <string name="movie_1_link">https://www.imdb.com/title/tt0114709/?ref_=ls_t_1</string>
+
+    <string name="movie_2_name">A Bug Life</string>
+    <string name="movie_2_rating">7.2</string>
+    <string name="movie_2_description">A misfit ant, looking for warriors to save his colony from greedy grasshoppers, recruits a group of bugs that turn out to be an inept circus troupe.</string>
+    <string name="movie_2_imageResName">pixar2</string>
+    <string name="movie_2_link">https://www.imdb.com/title/tt0120623/?ref_=ls_t_2</string>
+
+    <string name="movie_3_name">Toy Story 2</string>
+    <string name="movie_3_rating">7.9</string>
+    <string name="movie_3_description">When Woody is stolen by a toy collector, Buzz and his friends set out on a rescue mission to save Woody before he becomes a museum toy property with his roundup gang Jessie, Prospector, and Bullseye.</string>
+    <string name="movie_3_imageResName">pixar3</string>
+    <string name="movie_3_link">https://www.imdb.com/title/tt0120363/?ref_=ls_t_3</string>
+
+    <string name="movie_4_name">Monsters Inc</string>
+    <string name="movie_4_rating">8.1</string>
+    <string name="movie_4_description">In order to power the city, monsters have to scare children so that they scream. However, the children are toxic to the monsters, and after a child gets through, two monsters realize things may not be what they think.</string>
+    <string name="movie_4_imageResName">pixar4</string>
+    <string name="movie_4_link">https://www.imdb.com/title/tt0198781/?ref_=ls_t_4</string>
+
+    <string name="movie_5_name">Finding Nemo</string>
+    <string name="movie_5_rating">8.2</string>
+    <string name="movie_5_description">After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.</string>
+    <string name="movie_5_imageResName">pixar5</string>
+    <string name="movie_5_link">https://www.imdb.com/title/tt0266543/?ref_=ls_t_5</string>
+
+    <string name="movie_6_name">The Incredibles</string>
+    <string name="movie_6_rating">8.0</string>
+    <string name="movie_6_description">While trying to lead a quiet suburban life, a family of undercover superheroes are forced into action to save the world.</string>
+    <string name="movie_6_imageResName">pixar6</string>
+    <string name="movie_6_link">https://www.imdb.com/title/tt0317705/?ref_=ls_t_6</string>
+
+    <string name="movie_7_name">Cars</string>
+    <string name="movie_7_rating">7.3</string>
+    <string name="movie_7_description">On the way to the biggest race of his life, a hotshot rookie race car gets stranded in a rundown town and learns that winning isnt everything in life.</string>
+    <string name="movie_7_imageResName">pixar7</string>
+    <string name="movie_7_link">https://www.imdb.com/title/tt0317219/?ref_=ls_t_7</string>
+
+    <string name="movie_8_name">Ratatouille</string>
+    <string name="movie_8_rating">8.1</string>
+    <string name="movie_8_description">A rat who can cook makes an unusual alliance with a young kitchen worker at a famous Paris restaurant.</string>
+    <string name="movie_8_imageResName">pixar8</string>
+    <string name="movie_8_link">https://www.imdb.com/title/tt0382932/?ref_=ls_t_8</string>
+
+    <string name="movie_9_name">WALL-E</string>
+    <string name="movie_9_rating">8.4</string>
+    <string name="movie_9_description">A robot who is responsible for cleaning a waste-covered Earth meets another robot and falls in love with her. Together, they set out on a journey that will alter the fate of mankind.</string>
+    <string name="movie_9_imageResName">pixar9</string>
+    <string name="movie_9_link">https://www.imdb.com/title/tt0910970/?ref_=ls_t_9</string>
+
+    <string name="movie_10_name">Up</string>
+    <string name="movie_10_rating">8.3</string>
+    <string name="movie_10_description">78-year-old Carl Fredricksen travels to South America in his house equipped with balloons, inadvertently taking a young stowaway.</string>
+    <string name="movie_10_imageResName">pixar10</string>
+    <string name="movie_10_link">https://www.imdb.com/title/tt1049413/?ref_=ls_t_10</string>
+</resources>
